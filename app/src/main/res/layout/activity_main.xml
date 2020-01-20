@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:background="#FFEBEE">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFEBEE"
+			android:orientation="vertical">
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="4dp"
+				app:cardCornerRadius="10dp">
+
+				<ImageView
+					android:id="@+id/bookshop_logo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scaleType="centerCrop"
+
+					android:src="@drawable/kingdom_books_logo" />
+			</androidx.cardview.widget.CardView>
+
+
+			<TextView
+				android:id="@+id/title_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="2dp"
+				android:layout_marginEnd="2dp"
+				android:background="@drawable/title_design"
+				android:fontFamily="@font/lato_bold"
+				android:padding="6dp"
+				android:text="@string/business_name"
+				android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+			<TextView
+				android:id="@+id/description_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="2dp"
+				android:layout_marginTop="1dp"
+				android:layout_marginEnd="2dp"
+				android:background="@drawable/description_background"
+				android:fontFamily="@font/raleway"
+				android:padding="6dp"
+				android:text="@string/business_description"
+				android:textSize="26sp" />
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:scrollbars="horizontal">
+
+				<RelativeLayout
+					android:id="@+id/card_relativeLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/building_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp">
+
+						<ImageView
+							android:id="@+id/building_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:scaleType="centerCrop"
+							android:src="@drawable/building" />
+
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/stationery_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/building_card">
+
+						<ImageView
+							android:id="@+id/stationery_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/stationery" />
+
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/books_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/stationery_card">
+
+						<ImageView
+							android:id="@+id/books_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_books_books"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/morebooks_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/books_card">
+
+						<ImageView
+							android:id="@+id/morebooks_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_books_on_shelf"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/desk_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/morebooks_card">
+
+						<ImageView
+							android:id="@+id/desk_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_office_desk"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/couch_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/desk_card">
+
+						<ImageView
+							android:id="@+id/couch_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_books_couch"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/couches_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/couch_card">
+
+						<ImageView
+							android:id="@+id/couches_image"
+							android:layout_width="150dp"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_couches"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+					<androidx.cardview.widget.CardView
+						android:id="@+id/kingdombooks_card"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="4dp"
+						app:cardCornerRadius="10dp"
+						android:layout_toRightOf="@id/couches_card">
+
+						<ImageView
+							android:id="@+id/kingdombooks_image"
+							android:layout_width="wrap_content"
+							android:layout_height="150dp"
+							android:src="@drawable/kingdom_books"
+							android:scaleType="centerCrop"/>
+
+					</androidx.cardview.widget.CardView>
+
+
+				</RelativeLayout>
+			</HorizontalScrollView>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/relativeLayout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginStart="2dp"
+				android:layout_marginTop="4dp"
+				android:layout_marginEnd="2dp"
+				android:layout_marginBottom="8dp"
+				android:background="@drawable/relative_radius"
+				android:gravity="right"
+				android:padding="2dp"
+				android:paddingEnd="4dp">
+
+
+				<TextView
+					android:id="@+id/address_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="5dp"
+					android:fontFamily="@font/raleway"
+					android:paddingEnd="16dp"
+					android:text="@string/address"
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					app:layout_constraintBottom_toTopOf="@+id/hours_text"
+					app:layout_constraintStart_toEndOf="@id/address_logo"
+					app:layout_constraintTop_toBottomOf="@id/contact_text" />
+
+				<TextView
+					android:id="@+id/hours_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="4dp"
+					android:layout_marginBottom="4dp"
+					android:fontFamily="@font/raleway"
+					android:text="@string/working_hours"
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					app:layout_constraintBottom_toTopOf="@+id/web_address"
+					app:layout_constraintStart_toEndOf="@id/working_logo"
+					app:layout_constraintTop_toBottomOf="@id/address_text" />
+
+
+				<TextView
+					android:id="@+id/contact_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="4dp"
+					android:layout_marginBottom="4dp"
+					android:fontFamily="@font/raleway"
+					android:text="@string/contact_info"
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					app:layout_constraintBottom_toTopOf="@+id/address_text"
+					app:layout_constraintStart_toEndOf="@+id/contact_us_logo"
+					app:layout_constraintTop_toTopOf="parent" />
+
+				<TextView
+					android:id="@+id/web_address"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="4dp"
+					android:fontFamily="@font/raleway"
+					android:paddingEnd="25dp"
+					android:text="@string/web_address"
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintStart_toEndOf="@+id/web_logo"
+					app:layout_constraintTop_toBottomOf="@id/hours_text" />
+
+
+				<ImageView
+					android:id="@+id/contact_us_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="4dp"
+					android:layout_marginTop="8dp"
+					android:paddingStart="4dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:srcCompat="@drawable/contact_us2" />
+
+				<ImageView
+					android:id="@+id/address_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="4dp"
+					android:layout_marginTop="4dp"
+					android:paddingStart="4dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/contact_us_logo"
+					app:srcCompat="@drawable/ic_address" />
+
+				<ImageView
+					android:id="@+id/working_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="4dp"
+					android:layout_marginTop="12dp"
+					android:paddingStart="4dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/address_text"
+					app:srcCompat="@drawable/ic_working" />
+
+				<ImageView
+					android:id="@+id/web_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="4dp"
+					android:layout_marginTop="8dp"
+					android:paddingStart="4dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/working_logo"
+					app:srcCompat="@drawable/ic_web_address" />
+
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>

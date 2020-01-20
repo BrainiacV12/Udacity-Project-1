@@ -1,0 +1,17 @@
+<resources>
+	<string name="app_name">Kingdom Books and Stationery</string>
+	<string name="business_name">KINGDOM BOOKS AND STATIONERY</string>
+	<string name="business_description">Akwaaba! Welcome to Kingdom Books and Stationery. We have had over 45 years\'
+		experience in supplying quality office essentials, equipment and furniture at affordable prices.
+		We also aim at making it easier for customers to make a one stop shopping
+	</string>
+
+	<string name="contact_info">Contact: +233 501 4010 50</string>
+
+	<string name="address">Address: KNUST, Kumasi, Ghana</string>
+
+	<string name="working_hours">Working hours: 9:00am - 5:00pm</string>
+
+	<string name="web_address">Web Address: www.kingdomgh.com</string>
+
+</resources>
